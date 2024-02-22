@@ -57,4 +57,12 @@ const quotes = [{
     person: "Mu’aadh ibn Jabal (R.A) " ,
 }]
 
-btn.addEventListener('click',function(){})
+btn.addEventListener('click',function(){
+
+    let random = Math.floor(Math.random() * quotes.length);
+
+    content.innerText = quotes[random].quote;
+    author.innerText = quotes[random].person;
+    console.log(random);
+
+})
